@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./style.css" type ="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselCaptions" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselCaptions" data-bs-slide-to="2"></li>
+          <li data-bs-target="#carouselCaptions" data-bs-slide-to="3"></li>
+          <li data-bs-target="#carouselCaptions" data-bs-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <img src="./Assets/Beach.jpg" class="d-block w-100" alt="beach">
+            <div class="carousel-caption d-none d-md-block">
+              <div class = "transBox">
+                <h5>Beautiful Sunset at the Beach</h5>
+                <p>Bacon ipsum dolor amet shankle burgdoggen jowl beef ribs hamburger swine boudin.</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/spring.jpg" class="d-block w-100" alt="yellow flowers">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Wonderful Spring Season</h5>
+              <p>Bacon ipsum dolor amet shankle burgdoggen jowl beef ribs hamburger swine boudin.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/winter.jpg" class="d-block w-100" alt="winter and mountain">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>White Winter</h5>
+              <p>Bacon ipsum dolor amet shankle burgdoggen jowl beef ribs hamburger swine boudin.</p>
+            </div>
+          </div>
+        <div class="carousel-item">
+            <img src="./Assets/Tree.jpg" class="d-block w-100" alt="Tree Forest">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>White Winter</h5>
+              <p>Bacon ipsum dolor amet shankle burgdoggen jowl beef ribs hamburger swine boudin.</p>
+            </div>
+          </div>
+        <div class="carousel-item">
+            <img src="./Assets/BeachPalm.jpg" class="d-block w-100" alt="Beach Palmn">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>White Winter</h5>
+              <p>Bacon ipsum dolor amet shankle burgdoggen jowl beef ribs hamburger swine boudin.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselCaptions" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+      
+
+    <div class ="cardSection">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body bg-light">
+              <h5 class="card-title">Card One</h5>
+              <p class="card-text">Capicola boudin leberkas short ribs picanha. Chuck pork belly pig bresaola, ground round chislic porchetta. Picanha shoulder meatball chislic hamburger cow.</p>
+              <button type="button" class="btn btn-secondary" id = "btnBox" data-bs-toggle="modal" data-bs-target="#myModal">
+                Click Me 
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body bg-light">
+              <h5 class="card-title">Card Two</h5>
+              <p class="card-text">Capicola boudin leberkas short ribs picanha. Chuck pork belly pig bresaola, ground round chislic porchetta. Picanha shoulder meatball chislic hamburger cow.</p>
+              <a href="#" class="btn btn-secondary" id = "btnBox">Click Here</a>
+            </div>
+        
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body bg-light">
+              <h5 class="card-title">Card Three</h5>
+              <p class="card-text">Capicola boudin leberkas short ribs picanha. Chuck pork belly pig bresaola, ground round chislic porchetta. Picanha shoulder meatball chislic hamburger cow.</p>
+              <a href="#" class="btn btn-secondary" id = "btnBox">Click Here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="myModalLabel">Modal Feature</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Do you want to save ?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+  </body>
+</html>
+
